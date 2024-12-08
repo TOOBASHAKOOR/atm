@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM Interface</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="form.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="form-title" style="text-align: center;">ABC Bank</h1>
+        <h3>Welcome to My Bank</h3>
+        <img src="https://www.idfcfirstbank.com/content/dam/idfcfirstbank/images/blog/finance/what-is-atm-717x404.jpg" width="400px" alt="ATM">
+        
+        <div id="card-slot">
+            <p>Insert Card</p>
+            <div id="card" class="card">🧾</div>
+        </div>
+        
+        <form id="pin-form" style="display: none;">
+            <div class="input-group">
+                <i class="fas fa-lock"></i>
+                <input type="password" id="password" placeholder="Enter Your Pin Here" required>
+                <label for="password">Pin Code</label>
+            </div>
+            <button class="btn" id="submitSignIn" type="button">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

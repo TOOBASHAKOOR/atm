@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="form.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 id="welcomeMessage"></h1>
+        <p>Your account number: <span id="accountNo"></span></p>
+        <p>Your balance: $<span id="balance"></span></p>
+
+        <h3>Select an amount to withdraw:</h3>
+        <form id="withdrawForm">
+            <label>
+                <input type="radio" name="withdrawAmount" value="500"> 500
+            </label><br>
+            <label>
+                <input type="radio" name="withdrawAmount" value="1000"> 1000
+            </label><br>
+            <label>
+                <input type="radio" name="withdrawAmount" value="2000"> 2000
+            </label><br>
+            <label>
+                <input type="radio" name="withdrawAmount" value="5000"> 5000
+            </label>
+        </form>
+        
+        <button class="btn" id="withdrawBtn">Withdraw</button>
+    
+    </div>
+
+    <script src="./welcome.js"></script>
+</body>
+</html>
